@@ -25,7 +25,7 @@ int main (void){
         //Configurando o sock
         alvo.sin_family = AF_INET; //Para resolver ips AF_INET
         alvo.sin_port = htons(3000); //Definindo porta
-        alvo.sin_addr.s_addr = inet_addr("192.168.1.1/24"); //Configurando o IP alvo para conectar!
+        alvo.sin_addr.s_addr = inet_addr("IPS"); //Configurando o IP alvo para conectar!
 
 
         conn = connect(sock, (struct sockaddr *)&alvo, sizeof alvo);
